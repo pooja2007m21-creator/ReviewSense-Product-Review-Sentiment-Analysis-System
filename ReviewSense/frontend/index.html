@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ReviewSense – Product Review Sentiment Analysis</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css"></head><body><div id="hdr"></div>
+<main><section class="hero"><h1>What Do Customers Really Think?</h1><p>Paste a product review, or many reviews at once. ReviewSense classifies them as Positive, Negative or Neutral, scores the sentiment, and shows which product topics are praised or criticised.</p></section>
+<section class="card" aria-labelledby="it"><h2 id="it">Reviews to analyze</h2>
+<label class="field" for="mode">Mode</label><select id="mode"><option value="single">Single review</option><option value="bulk">Multiple reviews (one per line)</option></select>
+<label class="field" for="text">Review text</label><textarea id="text" placeholder="Paste a product review…"></textarea>
+<label class="field" id="saveRow"><input type="checkbox" id="save"> Save this analysis to history (stores the text locally in the database)</label>
+<div class="row"><button id="go" class="btn primary big">Analyze</button><button id="clear" class="btn danger">Clear</button></div></section>
+<section id="result" aria-live="polite" hidden></section></main>
+<script src="js/main.js"></script><script src="js/analyze.js"></script></body></html>

@@ -1,0 +1,9 @@
+@media(max-width:800px){
+.stats{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}
+.hero h1{font-size:1.8rem}
+#menuBtn{display:inline-block}
+nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--card);padding:.6rem;border-bottom:1px solid var(--bd)}
+nav.open{display:flex}
+nav a,.link,nav .icon{min-height:44px;text-align:left}
+.row .btn{flex:1 1 40%}
+}

@@ -1,0 +1,12 @@
+.wave{display:flex;gap:4px;justify-content:center;align-items:center;height:36px;margin:.6rem 0}
+.wave span{width:5px;height:8px;border-radius:3px;background:var(--pri);opacity:.35}
+.wave.on span{opacity:1;animation:bar 1s ease-in-out infinite}
+.wave.on span:nth-child(2){animation-delay:.15s}.wave.on span:nth-child(3){animation-delay:.3s}
+.wave.on span:nth-child(4){animation-delay:.45s}.wave.on span:nth-child(5){animation-delay:.6s}
+@keyframes bar{0%,100%{height:8px}50%{height:32px}}
+.mic.on{animation:pulse 1.5s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,91,234,.5)}100%{box-shadow:0 0 0 22px rgba(47,91,234,0)}}
+.toast{animation:slide .3s}
+@keyframes slide{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}
+.card.new{animation:slide .4s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
